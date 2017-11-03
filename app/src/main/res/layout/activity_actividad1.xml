@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoCorrect"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/ape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellidos"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:inputType="textAutoCorrect"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VERIFICAR"
+        android:layout_margin="10dp"
+        android:onClick="Validar"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acepta las condiciones: "
+        android:layout_margin="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_margin="10dp"
+        android:onClick="Volver"/>
+
+</LinearLayout>
